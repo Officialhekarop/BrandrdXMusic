@@ -424,8 +424,9 @@ class YouTubeAPI:
             downloaded_file = await loop.run_in_executor(None, audio_dl)
         return downloaded_file, direct
 
+
 lass YTM:
-   def __init__(self):
+  def __init__(self):
         self.base = "https://www.youtube.com/watch?v="
         self.regex = r"(?:youtube\.com|youtu\.be)"
         self.status = "https://www.youtube.com/oembed?url="
@@ -551,4 +552,4 @@ lass YTM:
 
         
         return downloaded_file, direct
-       
+        
